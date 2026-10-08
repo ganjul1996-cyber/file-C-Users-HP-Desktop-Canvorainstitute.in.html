@@ -1,0 +1,1544 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Convora | Digital Marketing Online Institute</title>
+    <meta name="description" content="Convora Digital Marketing Online Institute - Learn Digital Marketing, SEO, Meta Ads, Google Ads, Canva and AI with practical training.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #17142b;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        :root {
+            --primary: #5b35d5;
+            --secondary: #7c4dff;
+            --dark: #15122b;
+            --light: #f7f5ff;
+            --text: #625f70;
+            --white: #ffffff;
+            --border: #e8e4f3;
+        }
+
+        /* NAVBAR */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.96);
+            border-bottom: 1px solid var(--border);
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 18px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -1px;
+        }
+
+            .logo span {
+                color: var(--dark);
+            }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            list-style: none;
+        }
+
+            .nav-links a {
+                font-size: 15px;
+                font-weight: 600;
+                color: #383449;
+                transition: 0.3s;
+            }
+
+                .nav-links a:hover {
+                    color: var(--primary);
+                }
+
+        .nav-btn {
+            background: var(--primary);
+            color: white !important;
+            padding: 11px 20px;
+            border-radius: 8px;
+        }
+
+        /* HERO */
+
+        .hero {
+            background: radial-gradient(circle at 85% 20%, rgba(124,77,255,0.18), transparent 28%), radial-gradient(circle at 10% 80%, rgba(91,53,213,0.10), transparent 25%), #faf9ff;
+            padding: 90px 25px 100px;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #ece7ff;
+            color: var(--primary);
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 6vw, 70px);
+            line-height: 1.05;
+            letter-spacing: -3px;
+            margin-bottom: 22px;
+        }
+
+            .hero h1 span {
+                color: var(--primary);
+            }
+
+        .hero p {
+            max-width: 600px;
+            color: var(--text);
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 24px;
+            border-radius: 9px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+            .btn-primary:hover {
+                background: #4825b5;
+                transform: translateY(-2px);
+            }
+
+        .btn-outline {
+            border: 1px solid #cfc8e7;
+            color: var(--dark);
+            background: white;
+        }
+
+            .btn-outline:hover {
+                border-color: var(--primary);
+                color: var(--primary);
+            }
+
+        /* HERO CARD */
+
+        .hero-visual {
+            position: relative;
+        }
+
+        .dashboard {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 25px;
+            padding: 22px;
+            box-shadow: 0 25px 60px rgba(45,31,91,0.13);
+        }
+
+        .dashboard-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .dashboard-title {
+            font-weight: 800;
+            font-size: 19px;
+        }
+
+        .live {
+            background: #e9f9ef;
+            color: #159447;
+            padding: 6px 11px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .progress-box {
+            background: var(--light);
+            padding: 18px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .progress-head {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .progress {
+            height: 9px;
+            background: #ddd8ee;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+            .progress span {
+                display: block;
+                width: 78%;
+                height: 100%;
+                background: linear-gradient(90deg, var(--primary), #9c7cff);
+            }
+
+        .tools {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 12px;
+            margin-top: 18px;
+        }
+
+        .tool {
+            border: 1px solid var(--border);
+            padding: 17px;
+            border-radius: 14px;
+            font-weight: 700;
+            background: white;
+        }
+
+            .tool small {
+                display: block;
+                color: var(--text);
+                font-weight: normal;
+                margin-top: 3px;
+            }
+
+        /* COMMON */
+
+        section {
+            padding: 90px 25px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+
+            .section-heading .small-title {
+                color: var(--primary);
+                font-weight: 800;
+                text-transform: uppercase;
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin-bottom: 8px;
+            }
+
+            .section-heading h2 {
+                font-size: 42px;
+                line-height: 1.15;
+                margin-bottom: 14px;
+            }
+
+            .section-heading p {
+                color: var(--text);
+            }
+
+        /* STATS */
+
+        .stats {
+            background: var(--dark);
+            color: white;
+            padding: 35px 25px;
+        }
+
+        .stats-grid {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            text-align: center;
+            gap: 20px;
+        }
+
+        .stat h3 {
+            font-size: 32px;
+        }
+
+        .stat p {
+            color: #bbb7ca;
+            font-size: 14px;
+        }
+
+        /* COURSES */
+
+        .courses {
+            background: #ffffff;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 22px;
+        }
+
+        .course-card {
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 28px;
+            transition: 0.3s;
+            background: white;
+        }
+
+            .course-card:hover {
+                transform: translateY(-7px);
+                box-shadow: 0 18px 45px rgba(52,35,106,0.10);
+                border-color: #d4c9f5;
+            }
+
+        .course-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eee9ff;
+            color: var(--primary);
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        .course-card h3 {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .course-card p {
+            color: var(--text);
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .course-link {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        /* WHY US */
+
+        .why {
+            background: var(--light);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .why-content h2 {
+            font-size: 43px;
+            line-height: 1.15;
+            margin-bottom: 18px;
+        }
+
+        .why-content > p {
+            color: var(--text);
+            margin-bottom: 25px;
+        }
+
+        .benefits {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .benefit {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid var(--border);
+        }
+
+            .benefit strong {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .benefit span {
+                color: var(--text);
+                font-size: 13px;
+            }
+
+        .why-image {
+            min-height: 430px;
+            border-radius: 25px;
+            background: linear-gradient(135deg, rgba(91,53,213,0.92), rgba(124,77,255,0.82)), #5b35d5;
+            padding: 40px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .learning-card {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 35px;
+            border-radius: 22px;
+            width: 100%;
+        }
+
+            .learning-card h3 {
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+
+        .learning-list {
+            list-style: none;
+        }
+
+            .learning-list li {
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(255,255,255,0.15);
+            }
+
+                .learning-list li::before {
+                    content: "✓";
+                    margin-right: 10px;
+                    font-weight: bold;
+                }
+
+        /* PROCESS */
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+
+        .process-card {
+            padding: 28px;
+            border: 1px solid var(--border);
+            border-radius: 17px;
+        }
+
+        .number {
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+        .process-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .process-card p {
+            color: var(--text);
+            font-size: 14px;
+        }
+
+        /* CTA */
+
+        .cta {
+            padding: 80px 25px;
+        }
+
+        .cta-box {
+            max-width: 1100px;
+            margin: auto;
+            background: var(--dark);
+            border-radius: 25px;
+            padding: 65px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .cta-box::before {
+                content: "";
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                background: rgba(124,77,255,0.25);
+                border-radius: 50%;
+                top: -150px;
+                right: -80px;
+            }
+
+            .cta-box h2 {
+                font-size: 43px;
+                line-height: 1.15;
+                margin-bottom: 15px;
+                position: relative;
+            }
+
+            .cta-box p {
+                color: #c5c1d0;
+                margin-bottom: 25px;
+                position: relative;
+            }
+
+        /* TESTIMONIALS */
+
+        .testimonials {
+            background: #faf9ff;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 28px;
+            border-radius: 17px;
+            border: 1px solid var(--border);
+        }
+
+        .stars {
+            color: #f4ae24;
+            margin-bottom: 15px;
+        }
+
+        .testimonial p {
+            color: var(--text);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .student {
+            font-weight: bold;
+        }
+
+            .student span {
+                display: block;
+                font-size: 12px;
+                color: var(--text);
+                font-weight: normal;
+            }
+
+        /* CONTACT */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 50px;
+        }
+
+        .contact-info h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info > p {
+            color: var(--text);
+            margin-bottom: 25px;
+        }
+
+        .contact-item {
+            margin-bottom: 20px;
+        }
+
+            .contact-item strong {
+                display: block;
+                margin-bottom: 3px;
+            }
+
+            .contact-item span {
+                color: var(--text);
+            }
+
+        .contact-form {
+            border: 1px solid var(--border);
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 17px;
+        }
+
+            .form-group label {
+                display: block;
+                font-weight: 700;
+                font-size: 14px;
+                margin-bottom: 7px;
+            }
+
+            .form-group input,
+            .form-group textarea,
+            .form-group select {
+                width: 100%;
+                padding: 13px 15px;
+                border: 1px solid #ddd8ea;
+                border-radius: 9px;
+                outline: none;
+                font-family: inherit;
+                font-size: 14px;
+            }
+
+            .form-group textarea {
+                height: 120px;
+                resize: vertical;
+            }
+
+                .form-group input:focus,
+                .form-group textarea:focus,
+                .form-group select:focus {
+                    border-color: var(--primary);
+                }
+
+        /* FOOTER */
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 25px 25px;
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 40px;
+        }
+
+        .footer-logo {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .footer-about {
+            color: #aaa6b8;
+            max-width: 330px;
+            font-size: 14px;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 15px;
+        }
+
+        .footer-col a {
+            display: block;
+            color: #aaa6b8;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+            .footer-col a:hover {
+                color: white;
+            }
+
+        .copyright {
+            max-width: 1200px;
+            margin: auto;
+            border-top: 1px solid #302d43;
+            padding-top: 20px;
+            color: #858192;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 900px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-container,
+            .why-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding-top: 60px;
+            }
+
+            .course-grid,
+            .testimonial-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .navbar {
+                padding: 15px 18px;
+            }
+
+            .logo {
+                font-size: 23px;
+            }
+
+            section {
+                padding: 65px 18px;
+            }
+
+            .hero {
+                padding: 55px 18px 70px;
+            }
+
+                .hero h1 {
+                    font-size: 43px;
+                    letter-spacing: -2px;
+                }
+
+                .hero p {
+                    font-size: 16px;
+                }
+
+            .section-heading h2,
+            .why-content h2,
+            .cta-box h2,
+            .contact-info h2 {
+                font-size: 32px;
+            }
+
+            .course-grid,
+            .testimonial-grid,
+            .process-grid,
+            .benefits,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .cta-box {
+                padding: 45px 25px;
+            }
+
+            .tools {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Con<span>vora</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#why">Why Convora</a></li>
+                <li><a href="#contact" class="nav-btn">Book Free Demo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-container">
+
+            <div class="hero-content">
+
+                <span class="tag">ONLINE DIGITAL MARKETING INSTITUTE</span>
+
+                <h1>
+                    Learn Digital Marketing.
+                    <span>Build Your Future.</span>
+                </h1>
+
+                <p>
+                    Learn practical Digital Marketing skills with live online training,
+                    real-world projects, industry tools and expert guidance.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn btn-primary">
+                        Explore Courses
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        Book Free Demo
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="dashboard">
+
+                    <div class="dashboard-top">
+                        <div class="dashboard-title">
+                            Digital Marketing Program
+                        </div>
+
+                        <div class="live">
+                            LIVE ONLINE
+                        </div>
+                    </div>
+
+                    <div class="progress-box">
+
+                        <div class="progress-head">
+                            <span>Marketing Skills</span>
+                            <span>78%</span>
+                        </div>
+
+                        <div class="progress">
+                            <span></span>
+                        </div>
+
+                    </div>
+
+                    <div class="tools">
+
+                        <div class="tool">
+                            📈 SEO
+                            <small>Search visibility</small>
+                        </div>
+
+                        <div class="tool">
+                            📱 Meta Ads
+                            <small>Social advertising</small>
+                        </div>
+
+                        <div class="tool">
+                            🔎 Google Ads
+                            <small>Paid campaigns</small>
+                        </div>
+
+                        <div class="tool">
+                            🎨 Canva
+                            <small>Creative design</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STATS -->
+
+    <div class="stats">
+
+        <div class="stats-grid">
+
+            <div class="stat">
+                <h3>Live</h3>
+                <p>Online Classes</p>
+            </div>
+
+            <div class="stat">
+                <h3>Practical</h3>
+                <p>Learning Approach</p>
+            </div>
+
+            <div class="stat">
+                <h3>Real</h3>
+                <p>Projects & Assignments</p>
+            </div>
+
+            <div class="stat">
+                <h3>Expert</h3>
+                <p>Mentor Guidance</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- COURSES -->
+
+    <section class="courses" id="courses">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="small-title">
+                    Our Courses
+                </div>
+
+                <h2>
+                    Skills That Matter in Digital Marketing
+                </h2>
+
+                <p>
+                    Learn the tools and techniques used across today's digital marketing ecosystem.
+                </p>
+
+            </div>
+
+
+            <div class="course-grid">
+
+                <div class="course-card">
+
+                    <div class="course-icon">📣</div>
+
+                    <h3>Digital Marketing</h3>
+
+                    <p>
+                        Learn the complete digital marketing ecosystem from fundamentals
+                        to campaign execution.
+                    </p>
+
+                    <a href="#contact" class="course-link">
+                        View Course →
+                    </a>
+
+                </div>
+
+
+                <div class="course-card">
+
+                    <div class="course-icon">🔍</div>
+
+                    <h3>SEO</h3>
+
+                    <p>
+                        Understand keyword research, on-page SEO, technical basics,
+                        content and search optimization.
+                    </p>
+
+                    <a href="#contact" class="course-link">
+                        View Course →
+                    </a>
+
+                </div>
+
+
+                <div class="course-card">
+
+                    <div class="course-icon">📱</div>
+
+                    <h3>Social Media Marketing</h3>
+
+                    <p>
+                        Learn how to plan content, manage social platforms and understand
+                        audience engagement.
+                    </p>
+
+                    <a href="#contact" class="course-link">
+                        View Course →
+                    </a>
+
+                </div>
+
+
+                <div class="course-card">
+
+                    <div class="course-icon">🎯</div>
+
+                    <h3>Meta Ads</h3>
+
+                    <p>
+                        Learn campaign structure, audiences, creatives, budgets,
+                        optimization and reporting.
+                    </p>
+
+                    <a href="#contact" class="course-link">
+                        View Course →
+                    </a>
+
+                </div>
+
+
+                <div class="course-card">
+
+                    <div class="course-icon">📊</div>
+
+                    <h3>Google Ads</h3>
+
+                    <p>
+                        Understand search campaigns, keywords, ad copy, bidding and
+                        campaign performance.
+                    </p>
+
+                    <a href="#contact" class="course-link">
+                        View Course →
+                    </a>
+
+                </div>
+
+
+                <div class="course-card">
+
+                    <div class="course-icon">🤖</div>
+
+                    <h3>AI for Marketing</h3>
+
+                    <p>
+                        Discover practical ways to use AI tools for content, research,
+                        creative workflows and productivity.
+                    </p>
+
+                    <a href="#contact" class="course-link">
+                        View Course →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY C0NVORA -->
+
+    <section class="why" id="why">
+
+        <div class="container">
+
+            <div class="why-grid">
+
+                <div class="why-content">
+
+                    <div class="section-heading" style="text-align:left;margin:0 0 25px 0;">
+
+                        <div class="small-title">
+                            Why Convora
+                        </div>
+
+                        <h2>
+                            Learn Beyond Theory
+                        </h2>
+
+                        <p>
+                            Convora focuses on practical learning so students can
+                            understand how digital marketing works in real situations.
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefits">
+
+                        <div class="benefit">
+                            <strong>Live Online Classes</strong>
+                            <span>Interactive sessions with mentor guidance.</span>
+                        </div>
+
+                        <div class="benefit">
+                            <strong>Practical Projects</strong>
+                            <span>Apply concepts through assignments and projects.</span>
+                        </div>
+
+                        <div class="benefit">
+                            <strong>Industry Tools</strong>
+                            <span>Understand commonly used marketing platforms.</span>
+                        </div>
+
+                        <div class="benefit">
+                            <strong>Portfolio Building</strong>
+                            <span>Create work you can showcase professionally.</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="why-image">
+
+                    <div class="learning-card">
+
+                        <h3>
+                            What You'll Learn
+                        </h3>
+
+                        <ul class="learning-list">
+
+                            <li>Digital Marketing Fundamentals</li>
+
+                            <li>SEO & Content Strategy</li>
+
+                            <li>Meta & Google Ads</li>
+
+                            <li>Social Media Marketing</li>
+
+                            <li>Canva & Creative Design</li>
+
+                            <li>AI Tools for Marketing</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LEARNING PROCESS -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="small-title">
+                    Learning Process
+                </div>
+
+                <h2>
+                    From Learning to Doing
+                </h2>
+
+                <p>
+                    A simple learning journey designed around understanding,
+                    practice and application.
+                </p>
+
+            </div>
+
+
+            <div class="process-grid">
+
+                <div class="process-card">
+
+                    <div class="number">01</div>
+
+                    <h3>Learn</h3>
+
+                    <p>
+                        Understand important concepts through structured online sessions.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card">
+
+                    <div class="number">02</div>
+
+                    <h3>Practice</h3>
+
+                    <p>
+                        Work on exercises and assignments to strengthen your skills.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card">
+
+                    <div class="number">03</div>
+
+                    <h3>Build</h3>
+
+                    <p>
+                        Create practical projects and marketing assets for your portfolio.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card">
+
+                    <div class="number">04</div>
+
+                    <h3>Grow</h3>
+
+                    <p>
+                        Use your skills and portfolio to explore further career opportunities.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <div class="cta">
+
+        <div class="cta-box">
+
+            <h2>
+                Ready to Start Your Digital Marketing Journey?
+            </h2>
+
+            <p>
+                Join Convora and start building practical digital marketing skills.
+            </p>
+
+            <a href="#contact" class="btn btn-primary">
+                Book Your Free Demo
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- TESTIMONIALS -->
+
+    <section class="testimonials">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="small-title">
+                    Student Feedback
+                </div>
+
+                <h2>
+                    What Our Students Say
+                </h2>
+
+            </div>
+
+
+            <div class="testimonial-grid">
+
+                <div class="testimonial">
+
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        "The practical approach helped me understand digital marketing
+                        concepts much better."
+                    </p>
+
+                    <div class="student">
+                        Student Name
+                        <span>Ram-Digital Marketing Learner</span>
+                    </div>
+
+                </div>
+
+
+                <div class="testimonial">
+
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        "I liked the focus on real tools and assignments instead of
+                        only theoretical learning."
+                    </p>
+
+                    <div class="student">
+                        Student Name
+                        <span>Vaishali-Digital Marketing Learner</span>
+                    </div>
+
+                </div>
+
+
+                <div class="testimonial">
+
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        "The course gave me a structured way to learn SEO, social media
+                        and paid advertising."
+                    </p>
+
+                    <div class="student">
+                        Student Name
+                        <span>Janvi-Digital Marketing Learner</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="contact-grid">
+
+                <div class="contact-info">
+
+                    <div class="small-title">
+                        Get Started
+                    </div>
+
+                    <h2>
+                        Let's Talk About Your Learning Goals
+                    </h2>
+
+                    <p>
+                        Fill out the form and our team can help you understand the
+                        course structure and learning options.
+                    </p>
+
+
+                    <div class="contact-item">
+                        <strong>📧 Email</strong>
+                        <span>info@convora.com</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>📱 Phone</strong>
+                        <span>+91 XXXXX XXXXX</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>🌐 Learning Mode</strong>
+                        <span>Live Online Classes</span>
+                    </div>
+
+                </div>
+
+
+                <form class="contact-form">
+
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="Enter your email">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="Enter your phone number">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Interested Course</label>
+
+                        <select>
+
+                            <option>Select a course</option>
+
+                            <option>Digital Marketing</option>
+
+                            <option>SEO</option>
+
+                            <option>Social Media Marketing</option>
+
+                            <option>Meta Ads</option>
+
+                            <option>Google Ads</option>
+
+                            <option>AI for Marketing</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Message</label>
+
+                        <textarea placeholder="Tell us what you want to learn"></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary">
+                        Submit Enquiry
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <div>
+
+                <div class="footer-logo">
+                    Convora
+                </div>
+
+                <p class="footer-about">
+                    Convora is a digital marketing online institute focused on
+                    practical skills, projects and structured learning.
+                </p>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h4>Courses</h4>
+
+                <a href="#courses">Digital Marketing</a>
+                <a href="#courses">SEO</a>
+                <a href="#courses">Meta Ads</a>
+                <a href="#courses">Google Ads</a>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h4>Company</h4>
+
+                <a href="#about">About Us</a>
+                <a href="#why">Why Convora</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Privacy Policy</a>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h4>Connect</h4>
+
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">YouTube</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            © 2026 Convora Digital Marketing Institute. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
+```
